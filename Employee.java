@@ -34,6 +34,11 @@ public class Employee {
             throw new UnsupportedOperationException("Unimplemented method 'setSalary'");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Employee []";
+    }
     
     
 }
