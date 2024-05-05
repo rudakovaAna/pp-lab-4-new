@@ -8,11 +8,11 @@ public class Company {
        
         Employee[] employees = new Employee[5];
 
-        employees[0] = new Employee("Anna Crown", 3000);
-        employees[1] = new Employee("Suisan White", 3500);
-        employees[2] = new Employee("Emma P", 4000);
-        employees[3] = new Employee("Jacob G", 3200);
-        employees[4] = new Employee("Eva D", 3800);
+        employees[0] = new Manager("Anna Crown", 3000, 0);
+        employees[1] = new Worker(extracted(), 3500, null);
+        employees[2] = new Worker("Emma P", 4000, null);
+        employees[3] = new Manager("Jacob G", 3200, 0);
+        employees[4] = new Worker("Eva D", 3800, null);
 
         int nonManagerEmployeesCount = 0;
         for (Employee employee : employees) {
