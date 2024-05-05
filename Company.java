@@ -7,7 +7,7 @@ import employee.Manager;
         Employee[] employees = new Employee[7];
 
         employees[0] = new Manager("Anna Crown", 3000, 0);
-        employees[1] = new Worker(extracted(), 3500, null);
+        employees[1] = new Worker("Ala P", 3500, null);
         employees[2] = new Worker("Emma P", 4000, null);
         employees[3] = new Manager("Jacob G", 3200, 0);
         employees[4] = new Worker("Eva D", 3800, null);
