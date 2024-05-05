@@ -2,19 +2,17 @@ import employee.Employee;
 import employee.Worker;
 import employee.Manager;
 
-@SuppressWarnings("unused")
-public class Company {
     public static void main(String[] args) {
        
         Employee[] employees = new Employee[7];
 
-        employees[0] = new Employee("Anna Crown", 3000);
-        employees[1] = new Employee("Suisan White", 3500);
-        employees[2] = new Employee("Emma P", 4000);
-        employees[3] = new Employee("Jacob G", 3200);
-        employees[4] = new Employee("Eva D", 3800);
-        employees[5] = new Employee("Maria D", 3800);
-        employees[6] = new Employee("Kate D", 3800);
+        employees[0] = new Manager("Anna Crown", 3000, 0);
+        employees[1] = new Worker(extracted(), 3500, null);
+        employees[2] = new Worker("Emma P", 4000, null);
+        employees[3] = new Manager("Jacob G", 3200, 0);
+        employees[4] = new Worker("Eva D", 3800, null);
+        employees[5] = new Manager("Maria D", 3800, 0);
+        employees[6] = new Worker("Kate D", 3800, null);
 
         for (Employee employee : employees) {
             double newSalary = employee.getSalary() + 500;
@@ -33,4 +31,7 @@ public class Company {
             System.out.println(employee);
         }
     }
-}
+
+    private static String extracted() {
+        return "Suisan White";
+    }
